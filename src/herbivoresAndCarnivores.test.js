@@ -36,7 +36,7 @@ describe('Animal', () => {
         .toHaveProperty('health', 100);
     });
 
-  it(`Herbivore should have 'hide' method which inverts 'hidden' property`,
+  it(`Herbivore should have 'hide' method which sets 'hidden' property to true`,
     () => {
       const animal = new Herbivore('Zebra');
 

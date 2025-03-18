@@ -9,7 +9,7 @@ class Animal {
   }
 
   die() {
-    Animal.alive = Animal.alive.filter(animal => animal !== this);
+    Animal.alive = Animal.alive.filter((animal) => animal !== this);
   }
 }
 
@@ -23,6 +23,7 @@ class Herbivore extends Animal {
 
   takeDamage(damage) {
     this.health -= damage;
+
     if (this.health <= 0) {
       this.die();
     }
