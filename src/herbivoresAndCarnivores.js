@@ -18,7 +18,7 @@ class Herbivore extends Animal {
   health = 100;
 
   hide() {
-    this.hidden = !this.hidden;
+    this.hidden = true;
   }
 
   takeDamage(damage) {
